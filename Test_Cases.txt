@@ -1,0 +1,33 @@
+addm $5, $5, $3                          ---->addm  5,  5,  3 : COULDNT PARSE INSTRUCTION / INVALID INSTRUCTION 
+add $5, $xx, $2                          ---->add  5,  xx,  2 : COULDNT PARSE INSTRUCTION / INVALID INSTRUCTION 
+addi $4, $2, $3                          ---->0x20440003
+slt $2, $3, 5                            ---->0x0065102A
+add $8, $9, $10                          ---->0x012A4020
+add $19, $16, $17                        ---->0x02119820
+sub $8, $9, $10                          ---->0x012A4022
+or $8, $9, $10                           ---->0x012A4025
+addi $8, $9, 5                           ---->0x21280005
+addi $19, $16, -10                       ---->0x2213FFF6
+ori $8, $9, 5                            ---->0x35280005
+lui $t0, 0xFFFF                          ---->0x3C08FFFF
+add xx ,xx , xx                          ---->add xx ,xx , xx : COULDNT PARSE INSTRUCTION / INVALID INSTRUCTION 
+lbu $s1, 2($s0)                          ---->0x92110002
+lw $t4, -4($t0)                          ---->0x8D0CFFFC
+addi $v0, $zero, 4                       ---->0x20020004
+addi $v0, $zero, 5	                      ---->0x20020005
+add $s0, $zero, $v0	                     ---->0x00028020
+sll $s0,$s0,2 		                         ---->0x00108080
+add $t9,$t9,$s0 	                        ---->0x0330C820
+lw $t0,0($t9)		                          ---->0x8F280000
+addi $t9,4                               ---->0x23200080
+lw $t1,0($t9)		                          ---->0x8F290000
+addi $t9,4                               ---->0x23200080
+add $t1,$t1,$t0		                        ---->0x01284820
+sw $t1,0($t9)		                          ---->0xAF290000
+lw $a0, 0($t9)		                         ---->0x8F240000
+----------------------------------------------
+END OF PARSING
+----------------------------------------------
+Total Instructions: 27
+Total Instructions Succesfully  Parsed : 24
+Total Instructions Failed : 3

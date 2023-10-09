@@ -1,0 +1,19 @@
+add $8, $9, $10                          ---->0x012A4020
+add $19, $16, $17                        ---->0x02119820
+sub $8, $9, $10                          ---->0x012A4022
+or $8, $9, $10                           ---->0x012A4025
+addi $8, $9, 5                           ---->0x21280005
+addi $19, $16, -10                       ---->0x2213FFF6
+ori $8, $9, 5                            ---->0x35280005
+lui $t0, 0xFFFF                          ---->0x3C08FFFF
+addi $234, $3, 5                         ---->0x207D4000None
+addm $5, $5, $3                          ---->addm  5,  5,  3      : COULDNT PARSE INSTRUCTION / INVALID INSTRUCTION 
+add $5, $xx, $2                          ---->add  5,  xx,  2      : COULDNT PARSE INSTRUCTION / INVALID INSTRUCTION 
+addi $4, $2, $3                          ---->0x20440003
+slt $2, $3, 5                            ---->0x0065102A
+----------------------------------------------
+END OF PARSING
+----------------------------------------------
+Total Instructions: 13
+Total Instructions Succesfully  Parsed : 11
+Total Instructions Failed : 2
