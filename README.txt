@@ -10,5 +10,4 @@ I Have Successfully implemented majority of the functions asked including Error 
 
 Regards,
 
-Veer Mehta
-
+Pseudology
